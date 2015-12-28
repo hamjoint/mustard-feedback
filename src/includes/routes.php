@@ -20,11 +20,10 @@ along with Mustard.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 Route::group([
-    'prefix' => env('MUSTARD_BASE', ''),
-    'namespace' => 'Hamjoint\Mustard\Feedback\Http\Controllers',
+    'prefix'     => env('MUSTARD_BASE', ''),
+    'namespace'  => 'Hamjoint\Mustard\Feedback\Http\Controllers',
     'middleware' => 'auth',
-], function()
-{
+], function () {
     Route::get('user/feedback/{id}', 'UserController@getFeedback');
     Route::get('purchase/leave-feedback/{id}', 'PurchaseController@getLeaveFeedback');
     Route::post('purchase/leave-feedback', 'PurchaseController@postLeaveFeedback');
