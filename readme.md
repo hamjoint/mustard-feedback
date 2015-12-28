@@ -1,5 +1,12 @@
 ## Mustard Feedback module
 
+[![StyleCI](https://styleci.io/repos/45991298/shield?style=flat)](https://styleci.io/repos/45991298)
+[![Build Status](https://travis-ci.org/hamjoint/mustard-feedback.svg)](https://travis-ci.org/hamjoint/mustard-feedback)
+[![Total Downloads](https://poser.pugx.org/hamjoint/mustard-feedback/d/total.svg)](https://packagist.org/packages/hamjoint/mustard-feedback)
+[![Latest Stable Version](https://poser.pugx.org/hamjoint/mustard-feedback/v/stable.svg)](https://packagist.org/packages/hamjoint/mustard-feedback)
+[![Latest Unstable Version](https://poser.pugx.org/hamjoint/mustard-feedback/v/unstable.svg)](https://packagist.org/packages/hamjoint/mustard-feedback)
+[![License](https://poser.pugx.org/hamjoint/mustard-feedback/license.svg)](https://packagist.org/packages/hamjoint/mustard-feedback)
+
 User feedback support for [Mustard](http://withmustard.org/), the open source marketplace platform.
 
 ### Installation
