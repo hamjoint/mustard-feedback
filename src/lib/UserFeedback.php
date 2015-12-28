@@ -40,7 +40,7 @@ class UserFeedback extends \Hamjoint\Mustard\Model
     /**
      * Return true if feedback is positive.
      *
-     * @return boolean
+     * @return bool
      */
     public function isPositive()
     {
@@ -50,7 +50,7 @@ class UserFeedback extends \Hamjoint\Mustard\Model
     /**
      * Return true if feedback is negative.
      *
-     * @return boolean
+     * @return bool
      */
     public function isNegative()
     {
@@ -60,7 +60,7 @@ class UserFeedback extends \Hamjoint\Mustard\Model
     /**
      * Return true if feedback is neutral.
      *
-     * @return boolean
+     * @return bool
      */
     public function isNeutral()
     {
@@ -71,6 +71,7 @@ class UserFeedback extends \Hamjoint\Mustard\Model
      * Scope of positive feedback.
      *
      * @param \Illuminate\Database\Eloquent\Builder $query
+     *
      * @return \Illuminate\Database\Eloquent\Builder
      */
     public function scopePositive($query)
@@ -82,6 +83,7 @@ class UserFeedback extends \Hamjoint\Mustard\Model
      * Scope of negative feedback.
      *
      * @param \Illuminate\Database\Eloquent\Builder $query
+     *
      * @return \Illuminate\Database\Eloquent\Builder
      */
     public function scopeNegative($query)
@@ -93,6 +95,7 @@ class UserFeedback extends \Hamjoint\Mustard\Model
      * Scope of neutral feedback.
      *
      * @param \Illuminate\Database\Eloquent\Builder $query
+     *
      * @return \Illuminate\Database\Eloquent\Builder
      */
     public function scopeNeutral($query)
