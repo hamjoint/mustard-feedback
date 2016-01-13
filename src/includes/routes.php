@@ -23,8 +23,8 @@ Route::group([
     'prefix'     => env('MUSTARD_BASE', ''),
     'namespace'  => 'Hamjoint\Mustard\Feedback\Http\Controllers',
     'middleware' => ['web', 'auth'],
-], function() {
-    Route::get('user/feedback/{id}', 'UserController@getFeedback');
-    Route::get('purchase/leave-feedback/{id}', 'PurchaseController@getLeaveFeedback');
-    Route::post('purchase/leave-feedback', 'PurchaseController@postLeaveFeedback');
+], function () {
+    Route::get('user/feedback/{id}', 'UserController@showFeedback');
+    Route::get('purchase/leave-feedback/{id}', 'PurchaseController@showLeaveFeedbackForm');
+    Route::post('purchase/leave-feedback', 'PurchaseController@leaveFeedback');
 });
