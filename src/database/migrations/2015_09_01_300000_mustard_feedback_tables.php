@@ -19,8 +19,8 @@ along with Mustard.  If not, see <http://www.gnu.org/licenses/>.
 
 */
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
 class MustardFeedbackTables extends Migration
 {
@@ -31,8 +31,7 @@ class MustardFeedbackTables extends Migration
      */
     public function up()
     {
-        Schema::create('user_feedback', function(Blueprint $table)
-        {
+        Schema::create('user_feedback', function (Blueprint $table) {
             $table->integer('user_feedback_id', true)->unsigned();
             $table->integer('purchase_id')->unsigned();
             $table->integer('subject_user_id')->unsigned();
